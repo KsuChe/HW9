@@ -25,6 +25,9 @@ public class Book {
         this.publicationYear = publicationYear;
     }
 
+    public String toString() {
+        return "Книга " + this.name + " автор " + new Author("John"," Tolkien") + " год публикации " + this.publicationYear;
+    }
     }
 
 

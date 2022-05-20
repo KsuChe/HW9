@@ -20,5 +20,6 @@ public class Main {
         Author author1 = new Author("J.K.", "Rowling");
         System.out.println("author1.name = " + author1.getName());
         System.out.println("author1.surname = " + author1.getSurname());
+        System.out.println(theLordOfRing);
     }
 }
