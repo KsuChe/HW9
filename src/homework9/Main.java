@@ -24,5 +24,9 @@ public class Main {
         System.out.println(theLordOfRing);
         System.out.println(harryPotter.equals(theLordOfRing));
         System.out.println(author.equals(author1));
+        System.out.println(harryPotter.hashCode());
+        System.out.println(theLordOfRing.hashCode());
+        System.out.println(author.hashCode());
+        System.out.println(author1.hashCode());
     }
 }
