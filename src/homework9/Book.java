@@ -29,14 +29,11 @@ public class Book {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-        }
-        return false;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return getName().equals(book.getName());
     }
-
 
     public String toString() {
         return "Книга " + this.name + " автор " + author.getName() + author.getSurname() + " год публикации " + this.publicationYear;

@@ -17,6 +17,14 @@ public class Author {
         return this.surname;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o==null || getClass()!=o.getClass()) return false;
+        Author author = (Author) o;
+        return (name + surname).equals(author.name + author.surname);
+    }
+
     public String toString() {
         return this.name + this.surname;
     }

@@ -22,6 +22,7 @@ public class Main {
         System.out.println("author1.name = " + author1.getName());
         System.out.println("author1.surname = " + author1.getSurname());
         System.out.println(theLordOfRing);
-        System.out.println(theLordOfRing.equals(harryPotter));
+        System.out.println(harryPotter.equals(theLordOfRing));
+        System.out.println(author.equals(author1));
     }
 }
