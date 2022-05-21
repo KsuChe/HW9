@@ -10,6 +10,7 @@ public class Main {
         System.out.println("theLordOfRing.publicationYear = " + theLordOfRing.getPublicationYear());
         theLordOfRing.setPublicationYear(1965);
         System.out.println("theLordOfRing.getPublicationYear() = " + theLordOfRing.getPublicationYear());
+
         Book harryPotter = new Book("Harry Potter", new Author("J.K.", "Rowling"), 1990);
         System.out.println("harryPotter.name = " + harryPotter.getName());
         System.out.println("harryPotter.author = " + harryPotter.getAuthor());
@@ -21,5 +22,6 @@ public class Main {
         System.out.println("author1.name = " + author1.getName());
         System.out.println("author1.surname = " + author1.getSurname());
         System.out.println(theLordOfRing);
+        System.out.println(theLordOfRing.equals(harryPotter));
     }
 }

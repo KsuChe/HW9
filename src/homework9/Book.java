@@ -9,6 +9,8 @@ public class Book {
         this.author = author;
         this.publicationYear = publicationYear;
     }
+
+
     public String getName() {
         return this.name;
     }
@@ -25,8 +27,19 @@ public class Book {
         this.publicationYear = publicationYear;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+        }
+        return false;
+    }
+
+
     public String toString() {
-        return "Книга " + this.name + " автор " + new Author("John"," Tolkien") + " год публикации " + this.publicationYear;
+        return "Книга " + this.name + " автор " + author.getName() + author.getSurname() + " год публикации " + this.publicationYear;
     }
     }
 
